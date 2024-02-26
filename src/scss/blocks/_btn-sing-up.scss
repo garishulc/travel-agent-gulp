@@ -1,0 +1,27 @@
+.btn-signup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  padding: 8px 20px;
+  height: 40px;
+  border-radius: 8px;
+  background: #181818;
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 150%;
+  color: #fff;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in,
+  opaciti 0.2s ease-in;
+}
+
+
+// .btn_signup, .btn_signup:focus{
+//   background-color: #909090;
+// }
+.btn-sing-singup:hover,.btn-signup:active{
+  opacity: 0.8;
+  background-color: #909090;
+  color: #181818;
+}
+

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Стартовый шаблон</title>
+	<link rel="stylesheet" href="./css/main.css" />
+	<link rel="stylesheet" href="./fonts/Circular-Std-Bold.css">
+	<link rel="stylesheet" href="./fonts/Circular-Std-Book.css">
+	<link rel="stylesheet" href="./fonts/Circular-Std-Medium.css">
+</head>
+</head>
+
+<body>
+	<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <a href="#!" class="logo">
+                <img src="./img/icons/logo.svg" alt="Logo">
+            </a>
+            <ul class="nav__list">
+                <li><a href="#!" class="active">Home</a></li>
+                <li><a href="#!">About</a></li>
+                <li><a href="#!">Packages</a></li>
+                <li><a href="#!">FAQ</a></li>
+                <li><a href="#!">Community</a></li>
+            </ul>
+            <div class="nav__btns">
+                <a href="#!" class="btn-login">Login</a>
+                <a href="#!" class="btn-signup">Sing Up</a>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="mobile-nav">
+	<ul class="mobile-nav__list">
+		<li><a href="#" class="active">Home</a></li>
+		<li><a href="#!">Services</a></li>
+		<li><a href="#!">About</a></li>
+		<li><a href="#!">Projects</a></li>
+		<li><a href="#!">Contact</a></li>
+	</ul>
+</div>
+ 
+	<main>
+		
+		<section class="popular">
+  <div class="container">
+    <!-- popular__top -->
+    <div class="popular__top">
+      <div class="popular__title">
+        <h2 class="title-3">Popular Destinations</h2>
+        <div class="text">
+          <p>See our popular destinations that our client choose</p>
+        </div>
+      </div>
+      <div class="popular__controls">
+        <button id="swiper-button-prev"><img class="popular__arrow-left" src="../img/icons/arrow-left.svg" alt="arrow-keft" ></button>
+        <button id="swiper-button-next"><img class="popular__arrow-right" src="../img/icons/arrow-right.svg" alt="arrow-right"></button>
+      </div>
+      <!-- /popular__top -->
+    </div>
+  </div>
+  <div class="container-right">
+    <div class="popular__slider">
+      <!-- главный контейнер свайпера -->
+<div class="swiper">
+<!-- еще один врапер внутри контейнера -->
+  <div class="swiper-wrapper"> 
+    <!-- слайды -->
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img"><img src="../img/popular/venice.jpg" alt="venice"></div>
+  <div class="card__title-wrapper">
+    <h3 class="card__title">Venice, Italy</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+  <div class="card__price">
+    Starts from
+    <span class="card__price-price-currency">$</span><span class="card__price-value">900</span>
+  </div>
+</div></div>
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img"><img src="../img/popular/bali.jpg" alt="venice"></div>
+  <div class="card__title-wrapper">
+    <h3 class="card__title">Bali, Indonesia</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+  <div class="card__price">
+    Starts from
+    <span class="card__price-price-currency">$</span><span class="card__price-value">480</span>
+  </div>
+</div></div>
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img"><img src="../img/popular/Bangkok.jpg" alt="venice"></div>
+  <div class="card__title-wrapper">
+    <h3 class="card__title">Bangkok, Thailand</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+  <div class="card__price">
+    Starts from
+    <span class="card__price-price-currency">$</span><span class="card__price-value">480</span>
+  </div>
+</div></div>
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img"><img src="../img/popular/santorini.jpg" alt="venice"></div>
+  <div class="card__title-wrapper">
+    <h3 class="card__title">Santorini, Greek</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+  <div class="card__price">
+    Starts from
+    <span class="card__price-price-currency">$</span><span class="card__price-value">900</span>
+  </div>
+</div></div>
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img"><img src="../img/popular/paris.jpg" alt="venice"></div>
+  <div class="card__title-wrapper">
+    <h3 class="card__title">Paris, France</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+  <div class="card__price">
+    Starts from
+    <span class="card__price-price-currency">$</span><span class="card__price-value">1100</span>
+  </div>
+</div></div>
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img"><img src="../img/popular/new-york.jpg" alt="venice"></div>
+  <div class="card__title-wrapper">
+    <h3 class="card__title">New York, USA</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+  <div class="card__price">
+    Starts from
+    <span class="card__price-price-currency">$</span><span class="card__price-value">1800</span>
+  </div>
+</div></div>
+    <div class="swiper-slide"><div class="card">
+  <div class="card__img"><img src="../img/popular/dubai.jpg" alt="venice"></div>
+  <div class="card__title-wrapper">
+    <h3 class="card__title">Dubai, UAE</h3>
+    <div class="card__rating">(4.5)</div>
+  </div>
+  <div class="card__price">
+    Starts from
+    <span class="card__price-price-currency">$</span><span class="card__price-value">900</span>
+  </div>
+</div></div>
+  </div>
+  <!-- если нам нужна пагинация (нумерация 1/5-2/5...) -->
+  <!-- <div class="swiper-pagination"></div> -->
+
+  <!-- если нам нужный кнопки вперед-назад -->
+  <!-- <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div> -->
+
+  <!-- если нужен скрол-бар, ну тут понятно что это
+  <div class="swiper-scrollbar"></div> -->
+</div>
+    </div>
+  </div>
+</section>
+		<section class="testimonials">
+  <div class="container">
+    <div class="testimonials__grid">
+      <div class="testimonials__column">
+        <div class="card-review">
+  <div class="card-review__rating">
+    <img src="./img/icons/star.svg" alt="star">
+    <img src="./img/icons/star.svg" alt="star">
+    <img src="./img/icons/star.svg" alt="star">
+    <img src="./img/icons/star.svg" alt="star">
+    <img src="./img/icons/star.svg" alt="star">
+  </div>
+
+  "An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now
+  trust their recommendations for all my trips.."
+
+  photo
+  Hendra Paru Paru
+  Travel Enthusiast
+
+</div>
+      </div>
+      <div class="testimonials__column">
+       <div class="card-review">
+  <div class="card-review__rating">
+    <img src="./img/icons/star.svg" alt="star">
+    <img src="./img/icons/star.svg" alt="star">
+    <img src="./img/icons/star.svg" alt="star">
+    <img src="./img/icons/star.svg" alt="star">
+    <img src="./img/icons/star.svg" alt="star">
+  </div>
+
+  "An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now
+  trust their recommendations for all my trips.."
+
+  photo
+  Hendra Paru Paru
+  Travel Enthusiast
+
+</div>
+      </div>
+      <div class="testimonials__column">
+        <div class="card-review">
+  <div class="card-review__rating">
+    <img src="./img/icons/star.svg" alt="star">
+    <img src="./img/icons/star.svg" alt="star">
+    <img src="./img/icons/star.svg" alt="star">
+    <img src="./img/icons/star.svg" alt="star">
+    <img src="./img/icons/star.svg" alt="star">
+  </div>
+
+  "An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now
+  trust their recommendations for all my trips.."
+
+  photo
+  Hendra Paru Paru
+  Travel Enthusiast
+
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+	</main>
+	<footer class="footer">
+	<div class="container">
+		<h2>Footer</h2>
+	</div>
+</footer>
+
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+</html>

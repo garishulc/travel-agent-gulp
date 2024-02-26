@@ -1,0 +1,56 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(144, 144, 144, 0.30);
+    background: #FFF;
+}
+.form__devider {
+  height: 24px;
+  width: 1px;
+  background-color: #909090;
+}
+.form__label {
+  padding-left: 36px;
+  display: grid;
+  gap: 8px;
+  
+  span{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+.form__label-location{
+background-image: url('../img/icons/map.svg');
+  background-position: 0px 0px; /*x  y*/
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.form__label-date{
+  background-image: url('../img/icons/calendar.svg');
+  background-position: 0px 0px ; /*x  y*/
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.form__input{
+  color: #909090;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  &::placeholder{
+    color: var(---text-muted);
+  }
+}
+.form__input-date{
+  &::placeholder{
+    color: var(--text-muted);
+  }
+}
+.form__btn {
+}

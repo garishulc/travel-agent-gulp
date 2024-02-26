@@ -1,0 +1,28 @@
+.discover__picture-scroll {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+}
+.scroll-down {
+  position: relative;
+  display: inline-block;
+}
+.scroll-down__text {
+  //прописывание анимации вращения
+  animation: rotation 10s linear 0s infinite running normal;
+}
+.scroll-down__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+//ключевые кадры
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
