@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./fonts/Circular-Std-Bold.css" />
+    <link rel="stylesheet" href="./fonts/Circular-Std-Book.css" />
+    <link rel="stylesheet" href="./fonts/Circular-Std-Medium.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Стартовый шаблон</title>
-	<link rel="stylesheet" href="./css/main.css" />
-	<link rel="stylesheet" href="./fonts/Circular-Std-Bold.css">
-	<link rel="stylesheet" href="./fonts/Circular-Std-Book.css">
-	<link rel="stylesheet" href="./fonts/Circular-Std-Medium.css">
-</head>
-</head>
-
-<body>
-	<header class="header">
+  <body>
+    <header class="header">
     <div class="container">
         <nav class="nav">
             <a href="#!" class="logo">
@@ -43,10 +41,88 @@
 		<li><a href="#!">Contact</a></li>
 	</ul>
 </div>
- 
-	<main>
-		
-		<section class="popular">
+
+    <main>
+      <section class="discover">
+  <div class="container">
+    <div class="discover__grid">
+      <div class="discover__desc">
+        <div class="discover__title">
+          <h1 class="title-1 title-1--decor">Discover your favorite place with us</h1>
+        </div>
+        <div class="discover__text">
+          <div class="subtitle">
+            <p>Your journey begins here with our curated travel experiences.
+              Discover new horizons, create lasting memories, and
+              explore the world with our expertly crafted itineraries.</p>
+          </div>
+        </div>
+        <div class="discover__form">
+          <form action="" class="form">
+
+  <label for="" class="form__label form__label-location">
+    <span>Locations</span>
+    <input id="autoCompleteCountry" name="Locations" type="text" placeholder="e.g Bali, Indonesia"
+      class="form__input-location" autocomplete="off">
+  </label>
+
+  <div class="form__devider"></div>
+
+  <label for="" class="form__label form__label-date">
+    <span>Date and time</span>
+    <input id="datepicker" name="date" type="text" placeholder="MM/DD/YYYY" class="form__input-date" autocomplete="off">
+  </label>
+  <button class="form__btn">
+    <img src="./img/icons/search_full.svg" alt="search">
+  </button>
+</form>
+        </div>
+      </div>
+      <div class="discover__picture">
+        <div class="discover__picture-hint">
+          <div class="hint-discover">
+  <div class="hint-discover__picture">
+    <img class="hint-discover__img" src="../img/hints/coco-de-heaven.jpg" alt="hints" class="hint-discover__picture">
+  </div>
+  <div class="hint-discover__desc">
+    <div class="hint-discover__title">
+      Coco De Heaven
+      <span class="hint-discover__rating">(4.5)</span>
+    </div>
+    <div class="hint-discover__price">Starts from <span class="hint-discover__price-currency">$</span><span
+        class="hint-discover__price-value">400</span></div>
+  </div>
+
+</div>
+        </div>
+        <div class="discover__picture-scroll">
+          <div class="scroll-down">
+  <img src="../img/icons/scroll-down-text.svg" alt="scroll-down-text" class="scroll-down__text">
+  <img src="../img/icons/scroll-down.svg" alt="scroll-down" class="scroll-down__icon">
+</div>
+        </div>
+        <img src="./img/discover/hero-img.png" alt="hero" class="discover__picture-img">
+      </div>
+    </div>
+  </div>
+</section> <section class="partners">
+  <div class="container">
+    <!-- так как это ряд, так и называем его row - ряд -->
+    <div class="partners__row">
+      <div class="partners__title">
+        <h2 class="title-4 muted">Our Travel Partner</h2>
+      </div>
+      <div class="partner__content">
+        <img src="../img/partners/traveloka.svg" alt="partners" class="partner__img">
+        <img src="../img/partners/airbnb.svg" alt="partners" class="partner__img">
+        <img src="../img/partners/expedia.svg" alt="partners" class="partner__img">
+        <img src="../img/partners/skyscanner.svg" alt="partners" class="partner__img">
+        <img src="../img/partners/american-airlines.svg" alt="partners" class="partner__img">
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="popular">
   <div class="container">
     <!-- popular__top -->
     <div class="popular__top">
@@ -57,15 +133,26 @@
         </div>
       </div>
       <div class="popular__controls">
-        <button id="swiper-button-prev"><img class="popular__arrow-left" src="../img/icons/arrow-left.svg" alt="arrow-keft" ></button>
-        <button id="swiper-button-next"><img class="popular__arrow-right" src="../img/icons/arrow-right.svg" alt="arrow-right"></button>
+        <button id="swiper-button-prev">
+          <img
+            class="popular__arrow-left"
+            src="../img/icons/arrow-left.svg"
+            alt="arrow-keft"
+          />
+        </button>
+        <button id="swiper-button-next">
+          <img
+            class="popular__arrow-right"
+            src="../img/icons/arrow-right.svg"
+            alt="arrow-right"
+          />
+        </button>
       </div>
       <!-- /popular__top -->
     </div>
   </div>
   <div class="container-right">
-    <div class="popular__slider">
-      <!-- главный контейнер свайпера -->
+    <div class="popular__slider"><!-- главный контейнер свайпера -->
 <div class="swiper">
 <!-- еще один врапер внутри контейнера -->
   <div class="swiper-wrapper"> 
@@ -157,11 +244,10 @@
 
   <!-- если нужен скрол-бар, ну тут понятно что это
   <div class="swiper-scrollbar"></div> -->
-</div>
-    </div>
+</div></div>
   </div>
 </section>
-		<section class="testimonials">
+ <section class="testimonials">
   <div class="container">
     <div class="testimonials__grid">
       <div class="testimonials__column">
@@ -224,14 +310,13 @@
     </div>
   </div>
 </section>
-	</main>
-	<footer class="footer">
+    </main>
+    <footer class="footer">
 	<div class="container">
 		<h2>Footer</h2>
 	</div>
 </footer>
 
-	<script src="./js/index.bundle.js"></script>
-</body>
-
+    <script src="./js/index.bundle.js"></script>
+  </body>
 </html>
